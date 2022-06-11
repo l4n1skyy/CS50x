@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control w-auto mx-auto" id="symbol" name="symbol" type="text" placeholder="Symbol">
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary" type="submit">Search</button>
+        </div>
+    </form>
+    {% if stock %}
+        <table class="table mb-3 mx-auto main">
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ stock["symbol"] }}</td>
+                    <td>{{ stock["name"] }}</td>
+                    <td>{{ stock["price"] }}</td>
+                </tr>
+            </tbody>
+        </table>
+    {% endif %}
+
+{% endblock %}
