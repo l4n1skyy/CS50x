@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/adcc5009f4.js" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <script src="main.js"></script>
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-sm navbar-dark py-3">
+                <div class="container-fluid">
+                    <ul class="navbar-nav mx-auto">
+                        <!-- Home -->
+                        <li class="nav-item px-3">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <!-- Work -->
+                        <li class="nav-item dropdown px-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Work</a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="present.html">Present</a></li>
+                                <li><a class="dropdown-item" href="past.html">Past</a></li>
+                            </ul>
+                        </li>
+                        <!-- About -->
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Content -->
+        <div class="container centered-content">
+            <!-- Introduction -->
+            <div class="container-fluid text-center p-5">
+                <h3>Hi there! My name's Lani, and I'm an aspiring computer scientist. I'm 17 and I come from Malaysia.</h3>
+            </div>
+            <!-- Contact -->
+            <div class="d-flex justify-content-center p-3">
+                <form action="mailto:lanishaanusri28@gmail.com" method="get" target="_blank">
+                    <button type="submit" class="text-light">
+                        <i class="fa-solid fa-envelope fa-2x"></i>
+                        lanishaanusri28@gmail.com
+                    </button>
+                </form>
+                <form action="https://discord.com/app" method="get" target="_blank">
+                    <button type="submit" class="text-light"> 
+                        <i class="fa-brands fa-discord fa-2x"></i>
+                        Lani-Skyy#5447
+                    </button>
+                    </form>
+                    <form action="https://github.com/Lani-Skyy/" method="get" target="_blank">
+                    <button type="submit" class="text-light">
+                        <i class="fa-brands fa-github fa-2x"></i>
+                        Lani-Skyy
+                    </button>
+                </form>
+                <form action="https://www.linkedin.com/in/lanishaanusri/" method="get" target="_blank">
+                    <button type="submit" class="text-light">
+                        <i class="fa-brands fa-linkedin fa-2x"></i>
+                        lanishaanusri
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer mt-auto py-2">
+            <div class="container-fluid">
+                <span class="text-muted">
+                    <div class="row">
+                        <div class="col-sm text-center">last updated: 29/03/2022</div>
+                        <div class="col-sm text-center">Bye!</div>
+                    </div>
+                </span>
+            </div>
+        </footer>
+    </body>
+</html>

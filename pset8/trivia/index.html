@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>How much trash does the average person produce per day?<h3>
+                <p id='feedback1'></p>
+                <button id='n1' class='wrong'>0.5kg</button>
+                <button id='n2' class='wrong'>1kg</button>
+                <button id='n3' class='right'>2kg</button>
+            </div>
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>How many years until climate change is irreversible?</h3>
+                <p id='feedback2'></p>
+                <form>
+                    <input id='n4' type='text' placeholder="type a number">
+                    <input type='submit' value='Check Answer'>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
